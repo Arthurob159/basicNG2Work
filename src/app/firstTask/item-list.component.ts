@@ -2,11 +2,10 @@ import { Component, OnInit, ViewChildren } from '@angular/core';
 import {ItemService, ItemModel} from './item.service';
 import {FilterByPipe} from '../shared/pipe/filter-list.pipe';
 import {ItemFilterComponent} from './item-filter.component';
-// import {ItemDetailsComponent} from './item-details.component';
 
 @Component({
   moduleId: 'module.id',
-  styleUrls: [`monster.css`],
+  // styleUrls: [`monster.css`],
 //   pipes: [FilterByPipe],
 //   directives: [ItemFilterComponent, ItemDetailsComponent],
   // selector: 'monster-list',

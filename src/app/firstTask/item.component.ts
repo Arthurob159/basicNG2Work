@@ -32,16 +32,11 @@ export class ItemComponent implements OnInit {
 
   ngOnInit() {
    this.route.params.subscribe(params => {
-    //  console.log('Params are: ', params);
      const id = +params['id'];
      const prmItem = this.itemService.get(id);
      prmItem.then((item: ItemModel) => {
        this.item = item;
      });
-
-
-
-    //  this.service.getHero(id).then(hero => this.hero = hero);
    });
   }
 
